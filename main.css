@@ -1,0 +1,29 @@
+p {
+    margin: 0;
+}
+* {
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
+.section {
+    padding: 0 10px;
+}
+#gift {
+    margin-bottom: 50px;
+}
+#gift img {
+    border-radius: 100px;
+    transition: all 0.3s;
+}
+
+
+
+.frame {
+    padding: 40px 20px;
+    border: 5px solid black;
+    background-color: #df90c5;
+    border-radius: 10px;
+    box-shadow: -5px 2px 21px 39px rgb(223 144 197 / 29%);
+    -webkit-box-shadow: -5px 2px 21px 39px rgb(223 144 197 / 29%);
+    -moz-box-shadow: -5px 2px 21px 39px rgba(223, 144, 197, 0.29);
+}
