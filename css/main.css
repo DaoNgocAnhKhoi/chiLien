@@ -14,6 +14,7 @@ p {
 #gift img {
     border-radius: 100px;
     transition: all 0.3s;
+    cursor: pointer;
 }
 
 
@@ -26,4 +27,16 @@ p {
     box-shadow: -5px 2px 21px 39px rgb(223 144 197 / 29%);
     -webkit-box-shadow: -5px 2px 21px 39px rgb(223 144 197 / 29%);
     -moz-box-shadow: -5px 2px 21px 39px rgba(223, 144, 197, 0.29);
+}
+
+.shine {
+    box-shadow: 10px 2px 103px 0px rgba(235,233,182,0.75);
+    -webkit-box-shadow: 10px 2px 103px 0px rgba(235,233,182,0.75);
+    -moz-box-shadow: 10px 2px 103px 0px rgba(235,233,182,0.75);
+}
+
+.myBtn:focus{
+    outline: none;
+    border: none;
+    cursor: pointer;
 }
