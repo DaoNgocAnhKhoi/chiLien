@@ -16,6 +16,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet" />
+    <link rel="stylesheet" href="css/firework.css">
     <link rel="stylesheet" href="./css/balloonfloating.css">
     <link rel="stylesheet" href="./css/cake.css">
     <link rel="stylesheet" href="./css/index.css">
@@ -26,24 +27,27 @@
     <header>
         <!-- place navbar here -->
     </header>   
-    <main>
-        <div id="balloon-container" class="Myballoon">
+    <main id="nen">
+        <div data-id="balloon" id="balloon-container">
+            <div style="background-color: white;">
+                <canvas class="d-none" id="canvas"></canvas>
+                  </div>
             <audio id="sound">
                 <source src="./sound/X2Download.app - Happy Birthday _ Kids Songs _ Super Simple Songs (128 kbps).mp3">
             </audio>
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
-                        <button class="btn myBtn" onclick="batNhac()">
-                            <div onclick="batDen()" class="d-flex justify-content-center" id="gift">
+                        <button class="btn myBtn" onclick="batNhac()" id="gift">
+                            <div class="d-flex justify-content-center">
                                 <img class="shine" width="300px" id="theDen"
                                     src="./img/gift-box-on-white-background-with-confetti-vector-6600162.jpg" alt=""></div>
                         </button>
 
-                        <div class="frame">
+                        <div class="frame showPre showGif" >
                             <p>&hearts; Chúc mừng sinh nhật mẹ iuuuu &hearts;
                             </p>
                         </div>
-                        <div class="cake-body" id="myCake">
+                        <div class="cake-body showGif" id="myCake">
                             <div class="layer f1">
                                 <div class="spot-group sg1">
                                     <div class="spot s1"></div>
@@ -98,6 +102,7 @@
                     </section>
                 </div>
             </div>
+            </div>
         </div>
     </main>
     <footer>
@@ -112,6 +117,7 @@
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
         crossorigin="anonymous"></script>
     
+    <script src="./js/fireworks.js"></script>
     <script src="./js/balloonfloating.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/jquery.js"></script>

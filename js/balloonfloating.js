@@ -23,9 +23,12 @@ function createBalloons(num) {
   for (var i = num; i > 0; i--) {
   var balloon = document.createElement("div");
   balloon.className = "balloon";
-  balloon.style.cssText = getRandomStyles();           balloonContainer.append(balloon);
+  balloon.style.cssText = getRandomStyles();           
+  balloonContainer.append(balloon);
   }
 }
+
+// setTimeout(createBalloons, 2000);
 
 window.onload = function() {
   createBalloons(100);
